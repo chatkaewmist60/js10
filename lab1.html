@@ -11,9 +11,9 @@
           let b = 2;
           let c = a++;
 
-          let d = String(a);
-          let e = String(b);
-          let f = String(c);
+          let d = String(a); // NaN เพราะไปบวกค่าเพิ่มใส่ undefined a จึงกลายเป็น NaN
+          let e = String(b); // มีค่า =2 แต่ในรูปแบบของ string จึง "2"
+          let f = String(c); // NaN เนื่องจาก a เป็น NaN เอามาใส่ c เลยเป็น NaN ด้วย
 
           console.log(d);
           console.log(e);
